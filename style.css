@@ -1,0 +1,235 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    background: rgb(22, 22, 22);
+    font-family: sans-serif;
+}
+a{
+  text-decoration: none;
+}
+#particles-js
+{
+    min-height: 500px;
+    width: 100%;
+    height: 100vh;
+    background: rgb(0, 0, 0);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+
+
+
+.Tcontainer{
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background: transparent;
+    width: 100%;
+  }
+
+.text1{
+  text-transform: uppercase;
+  color: white;
+  font-size: 60px;
+  font-weight: 700;
+  letter-spacing: 8px;
+  margin-bottom: 20px;
+  background: transparent;
+  position: relative;
+  animation: text 3s 1;
+}
+.text2{
+  text-transform: uppercase;
+  font-size: 30px;
+  color: #561d97;
+  letter-spacing: 8px;
+  animation: text 3s 1;
+}
+
+@keyframes text {
+  0%{
+    color: black;
+  }
+  30%{
+    letter-spacing: 25px;
+  }
+  85%{
+    letter-spacing: 8px;
+  }
+}
+
+
+@keyframes text2 {
+    0%{
+      color: black;
+    }
+    30%{
+      letter-spacing: 25px;
+    }
+    85%{
+      letter-spacing: 8px;
+    }
+  }
+
+.icon
+{
+    color: white;
+    position: absolute;
+    margin-top: 250px;
+    opacity: 0.5;
+    top: 40%;
+    left: 49%;
+    animation: icon 4s 1;
+}
+
+
+@keyframes icon {
+  0%{
+    opacity: 0;
+  }
+  30%{
+    opacity: 0.5;
+  }
+  60%
+  {
+    margin-top: 250px;
+  }
+
+  80%{
+    margin-top: 220px;
+  }
+  100%
+  {
+    margin-top: 250px;
+  }
+}
+
+
+.container {  
+  display: grid;
+  grid-template-columns: 1fr 1fr;  
+  grid-template-rows: 50vh 50vh;  
+}
+
+.container > div > img {  
+  width: 100%;  
+  height: 100%;  
+  object-fit: cover;  
+}
+.g1
+{
+  background: url(Background/PROJECT\ BG.gif);
+  background-size: cover;
+  background-position:center;
+}
+
+.g2
+{
+  background: url(Background/SM\ BG.gif);
+  background-size: cover;
+  background-position:center;
+}
+
+.g3
+{
+  background: url(Background/TRAVEL\ BG.gif);
+  background-size: cover;
+  background-position:center;
+}
+
+.g4
+{
+  background: url(Background/ABOUT\ ME\ BG.gif);
+  background-size: cover;
+  background-position:center;
+}
+
+.gt1
+{
+  background: transparent;
+  text-align: center;
+  margin-top: 200px;
+}
+
+.gt2
+{
+  background: transparent;
+  text-align: center;
+  margin-top: 200px;
+}
+
+.gts1
+{
+  color: aliceblue;
+  text-shadow: 10px 10px 10px black;
+  background: transparent;
+  font-weight: bold;
+  font-size: 500%;
+  transition: 0.4s;
+}
+
+
+
+.gts1:hover{
+  text-shadow: 20px 20px 20px black;
+  font-size: 530%;
+}
+
+@media screen and (max-width: 1000px) {
+    .mp
+    {
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .text1
+    {
+        font-weight: 600;
+        font-size: 40px;
+    }
+
+    .text2
+    {
+        font-size: 30px;
+    }
+    .gts1
+    {
+      font-size: 250%;
+    }
+  }
+
+  
+@media screen and (max-width: 900px) {
+  .container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;  
+    grid-template-rows: 50vh 50vh;  
+  }
+  .gt1
+{
+  margin-top: 150px;
+}
+.gts1
+{
+  font-size: 200%;
+}
+}
+
+@media screen and (max-width: 500px) {
+  .gt2
+  {
+    margin-top: 150px;
+  }
+  
+  .gts1
+{
+  font-size: 150%;
+}
+
+}
